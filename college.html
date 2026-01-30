@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>College Application</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: blueviolet;
+        }
+        .form-container {
+            max-width: 600px;
+            background: #fff;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0. 1);
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label{
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        input, section, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            color: black;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #1a5dc9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>College Application</h2>
+
+        <form action="#" method="post">
+            <!-- Persion imformation-->
+             <label>Full Name</label>
+             <input type="text" name="full name" required>
+             <label>Data Of Birdh</label>
+             <input type="data" name="dob" required>
+             <label>Email Address</label>
+             <input type="email" name="email" required>
+             <label>Phone Number</label>
+             <input type="tel"  maxlength="10"  name="phone" required>
+             <label>Gender</label>
+             <select name="gender" required>
+                <option value="">select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+             </select>
+
+             <!--Academic information-->
+             <label>Highest Qualification</label>
+             <select name="qualification" required>
+                <option value="">select</option>
+                <option>High School</option>
+                <option>Intermediate</option>
+                <option>Diploma</option>
+             </select>
+
+             <label>Percentage / CGPA</label>
+             <input type="text" name="marks" required>
+
+             <label>Course Applying For</label>
+             <select name="Course" required>
+                <option value="">select</option>
+                <option>B.Tech</option>
+                <option>B.Sc</option>
+                <option>B.Com</option>
+                <option>B.A</option>
+                <option>BCA</option>
+                <option>BBA</option>
+             </select>
+
+             <!--Address-->
+             <label>Address</label>
+             <textarea name="address" rows="3" required></textarea>
+
+             <!--Update-->
+             <label>Upload Certificates</label>
+             <input type="file" name="documents">
+
+             <!--Submit-->
+             <button type="Submit">Submit Application</button>
+
+
+
+        </form>
+    </div>
+</body>
+</html>
